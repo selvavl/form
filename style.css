@@ -1,22 +1,109 @@
+* {
+    outline: 1px dashed red;
+    --left-margin: 30px;
+}
+
 html {
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     display: flex;
     margin: 0;
+    justify-content: center;
 }
 
-#div1 {
-    background-image: url(img/hse.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 40vw;
-    height: 100vh;
-    width: 40vw;
+.right.container {
+    width: 600px;
+
 }
 
-#div2 { background-color: aqua;
-    height: 100vh;
-    width: 60vw;
+.right.textbox {
+    font-weight: 600;
+    margin-bottom: 50px;
 }
+
+.right.textbox p {
+    margin: 0 var(--left-margin);
+}
+
+label{
+    font-weight: 600;
+    font-size: 0.6rem;
+    color: gray;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.row div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+
+}
+
+fieldset {
+    display: block;
+    border: 0;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.35);
+    margin: 40px 0 25px;
+    padding: 20px var(--left-margin);
+    
+
+}
+
+.submit {
+    margin-left: var(--left-margin);
+    background-color: olivedrab;
+    color: white;
+    transition: background-color 0.2s;
+    font-weight: 600;
+    padding: 10px 35px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 2px 0.5px 0 rgba(0,0,0,0.55);
+
+}
+
+.submit:hover {
+
+    background-color: rgb(67, 91, 19)
+}
+
+.submit:active {
+    padding-top: 10.5px;
+    padding-bottom: 9.5px;
+    box-shadow: 0 3px 0.5px 0 rgba(0,0,0,0.55);
+    background-color: rgb(255, 179, 0)
+}
+
+legend {
+    font-weight: 600;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
+.right.container > div {
+    margin: 0 var(--left-margin);
+}
+
+.login {
+    text-decoration: none;
+    color: olivedrab;
+    font-weight: 600;
+}
+
+.login:hover {
+    color: rgb(67, 91, 19)
+}
+
+.login:active {
+    color: rgb(255, 179, 0)
+}
+
+      

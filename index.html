@@ -5,56 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="right container">
-        <div>
+        <div class="right textbox">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
             <p>Sign up <em>now</em> to get started</p>
+            <br>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <div>
+        <div class="form container">
             <form action="#">
                 <fieldset>
                     <legend>Let's do this</legend>
                     <div class="row one">
                         <div>
-                            <label for="f_name">First Name</label>
-                            <input type="text" id='f_name' placeholder="Your first name" required>
+                            <label for="f_name">FIRST NAME</label>
+                            <input type="text" id='f_name' required>
                         </div>
                         <div>
-                            <label for="l_name">Last Name</label>
-                            <input type="text" id='l_name' placeholder="Your last name" required>
+                            <label for="l_name">LAST NAME</label>
+                            <input type="text" id='l_name' required>
                         </div>
                     </div>
                     <div class="row two">
                         <div>
-                            <label for="email">Email</label>
-                            <input type="email" id='email' placeholder="Your email address" required>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id='email' required>
                         </div>
                         <div>
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id='phone' placeholder="Your phone number" required>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id='phone' required>
                         </div>
                     </div>
-                    <div>
+                    <div class="row three">
                         <div>
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="Your password" required>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password"  required>
                         </div>
                         <div>
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" name="confirm-password" id="confirm-password" placeholder="Your password" required>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password"  required>
                         </div>
                     </div>
                 </fieldset>
-                <button type="submit">Create Account</button>
+                <button type="submit" class="submit">Create Account</button>
             </form>
         </div>
         <div>
-            <p>Already have an account? <span><a href="#">Log in</a></span></p>
+            <p>Already have an account? <span><a href="#" class="login">Log in</a></span></p>
         </div>
     </div>
+
     
 </body>
 </html>
