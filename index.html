@@ -8,8 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
 </head>
 <body>
+    <div class="left container">
+
+        <div class="logo container">
+            <span id="logo"><img src="img/odin-lined.png" alt="odin logo"></span>
+            <span id="odin">ODIN</span>
+        </div>
+
+        <div>
+            <p id="creditos">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/es/fotos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        </div>
+  
+    </div>
     <div class="right container">
         <div class="right textbox">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
@@ -21,7 +34,7 @@
             <form action="#">
                 <fieldset>
                     <legend>Let's do this</legend>
-                    <div class="row one">
+                    <!-- <div class="row one">
                         <div>
                             <label for="f_name">FIRST NAME</label>
                             <input type="text" id='f_name' required>
@@ -40,15 +53,17 @@
                             <label for="phone">PHONE NUMBER</label>
                             <input type="tel" id='phone' required>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="row three">
                         <div>
-                            <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password"  required>
+                            <label class="label password" for="password">PASSWORD</label>
+                            <input class="password input" type="password" name="password" id="password"  required>
+                            <span class="password span"></span>
                         </div>
                         <div>
-                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm-password" id="confirm-password"  required>
+                            <label class="password label" for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input class="password input" type="password" name="confirmPassword" id="confirmPassword" required>
+                            <span class="feedback"></span>
                         </div>
                     </div>
                 </fieldset>
@@ -56,7 +71,7 @@
             </form>
         </div>
         <div>
-            <p>Already have an account? <span><a href="#" class="login">Log in</a></span></p>
+            <p class="login-container">Already have an account? <span><a href="#" class="login">Log in</a></span></p>
         </div>
     </div>
 

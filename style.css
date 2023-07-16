@@ -1,8 +1,24 @@
+@font-face {
+    font-family: odinFont;
+    src: url(font/Norse-Bold.otf);
+}
+
 * {
-    outline: 1px dashed red;
+    outline: 0px dashed red;
     --left-margin: 30px;
 }
 
+#odin {
+    font-family: odinFont;
+    color: white !important;
+    font-size: 5rem;
+
+}
+
+#logo>img {
+    width: auto;
+    height: 5rem !important;
+}
 html {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -15,9 +31,28 @@ body {
 }
 
 .right.container {
-    width: 600px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    min-width: 500px;
+}
+
+.left.container {
+    background-image: url(./img/leaves.jpg);
+    background-size:cover;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
 }
+
+
 
 .right.textbox {
     font-weight: 600;
@@ -50,9 +85,9 @@ label{
 fieldset {
     display: block;
     border: 0;
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.35);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.35);
     margin: 40px 0 25px;
-    padding: 20px var(--left-margin);
+    padding: 30px;
     
 
 }
@@ -88,14 +123,10 @@ legend {
     font-size: 1.25rem;
 }
 
-.right.container > div {
-    margin: 0 var(--left-margin);
-}
-
 .login {
     text-decoration: none;
     color: olivedrab;
-    font-weight: 600;
+    font-weight: 400px;
 }
 
 .login:hover {
@@ -106,4 +137,64 @@ legend {
     color: rgb(255, 179, 0)
 }
 
-      
+.login-container {
+    display: block;
+    margin-left: var(--left-margin);
+}
+
+input {
+    appearance: none;
+    border: 2px solid;
+    border-color: #E5E7EB;
+    border-radius: 4px;
+}
+
+.right.container:last-child {
+    background-color: red;;
+}
+
+
+
+p.login-container {
+    margin: 25px 30px;
+}
+
+.logo.container {
+    margin-top: 20vh;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.45)
+
+}
+
+#creditos {
+    color: white;
+    font-size: .8rem;
+}
+
+#creditos>a {
+    color: white;
+}
+
+#creditos>a:visited {
+    color: lightgoldenrodyellow;
+}
+
+input:focus {
+    border-color: #6191f2;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.55);
+}
+
+.password.error {
+    border-color: red;
+}
+
+label.error::after {
+    content: "pseudoelemento";
+
+}
+
+.span.password {
+    color: red;
+}
