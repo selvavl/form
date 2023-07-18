@@ -4,7 +4,6 @@
 }
 
 * {
-    outline: 0px dashed red;
     --left-margin: 30px;
 }
 
@@ -13,13 +12,13 @@
     color: white !important;
     font-size: 5rem;
     margin: auto 0;
-
 }
 
 #logo>img {
     width: auto;
     height: 6rem !important;
 }
+
 html {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -50,7 +49,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
 }
 
 
@@ -80,7 +78,6 @@ label{
     display: flex;
     flex-direction: column;
     margin-right: 60px;
-
 }
 
 fieldset {
@@ -88,9 +85,7 @@ fieldset {
     border: 0;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.35);
     margin: 40px 0 25px;
-    padding: 30px;
-    
-
+    padding: 30px;   
 }
 
 .submit {
@@ -103,11 +98,9 @@ fieldset {
     border-radius: 5px;
     border: 0;
     box-shadow: 0 2px 0.5px 0 rgba(0,0,0,0.55);
-
 }
 
 .submit:hover {
-
     background-color: rgb(67, 91, 19)
 }
 
@@ -182,7 +175,6 @@ input:focus {
     border-color: #6191f2;
     box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.55);
 }
-
 
 .password.span::after {
     position: absolute;
