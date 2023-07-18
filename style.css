@@ -150,12 +150,6 @@ input {
     border-radius: 4px;
 }
 
-.right.container:last-child {
-    background-color: red;;
-}
-
-
-
 p.login-container {
     margin: 25px 30px;
 }
